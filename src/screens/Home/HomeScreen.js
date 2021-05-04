@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from '../../components/Search/Search';
+import Search from '../../components/Search/SearchComponent';
 import Title from '../../components/Title/Title';
 import { dateBuilder } from '../../constants/constants';
 

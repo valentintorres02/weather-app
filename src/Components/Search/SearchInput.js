@@ -6,16 +6,14 @@ function SearchInput({ search, setSearch, fetching }) {
   return (
     <div>
       <form className="form-inline search-box" onSubmit={(e) => e.preventDefault()}>
-        <div>
-          <input
-            className="form-control"
-            type="text"
-            placeholder="Enter city name"
-            onChange={(e) => setSearch(e.target.value)}
-            value={search}
-          />
-          <SearchButton fetching={fetching} />
-        </div>
+        <input
+          className="form-control"
+          type="text"
+          placeholder="Enter city name"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
+        />
+        <SearchButton fetching={fetching} />
       </form>
     </div>
   );
