@@ -1,15 +1,9 @@
 import React from 'react';
-import './App.css';
-import Search from './components/Search/Search';
-import Title from './components/Title/Title';
-import { dateBuilder } from './constants/constants';
+import HomeScreen from './screens/Home/HomeScreen';
 
 function App() {
   return (
-    <>
-      <Title />
-      <Search date={dateBuilder(new Date())} />
-    </>
+    <HomeScreen />
   );
 }
 
