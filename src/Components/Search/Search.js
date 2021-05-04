@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
+import { API_WEB, API_KEY } from '../../constants/constants';
 
 function Search({ date }) {
   Search.propTypes = {
@@ -9,9 +10,6 @@ function Search({ date }) {
 
   const [search, setSearch] = useState('');
   const [data, setData] = useState({});
-
-  const API_WEB = 'http://api.openweathermap.org/data/2.5/';
-  const API_KEY = '90edfdd804711bd4864a9a0f55293bff';
 
   const fetching = () => {
     fetch(`${API_WEB}weather?q=${search}&appid=${API_KEY}`)

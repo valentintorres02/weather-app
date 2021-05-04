@@ -14,3 +14,7 @@ export const dateBuilder = (d) => {
 
   return `${day} ${date} ${month} ${year}`;
 };
+
+export const API_WEB = 'http://api.openweathermap.org/data/2.5/';
+
+export const API_KEY = '90edfdd804711bd4864a9a0f55293bff';
