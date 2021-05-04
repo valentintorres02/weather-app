@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import '../../App.css';
 
 function Search({ date }) {
   Search.propTypes = {
@@ -21,13 +22,13 @@ function Search({ date }) {
   const kelvinToCelsius = (degrees) => degrees - 273.1;
 
   return (
-    <div>
+    <div className="search-data">
       <div>
         <form className="form-inline search-box" onSubmit={(e) => e.preventDefault()}>
           <div>
 
             <input className="form-control" type="text" placeholder="Enter city name" onChange={(e) => setSearch(e.target.value)} value={search} />
-            <button className="btn btn-primary" onClick={() => fetching()} type="button">Search</button>
+            <button className="btn btn-primary" onClick={() => fetching()} type="submit">Search</button>
           </div>
         </form>
       </div>
