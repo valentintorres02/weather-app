@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../../App.css';
 import { API_WEB, API_KEY } from '../../constants/constants';
 import SearchInput from './SearchInput';
-import WeatherInfo from '../Weather.js/WeatherInfo';
+import WeatherInfo from '../Weather/WeatherInfo';
 
 function Search({ date }) {
   const [search, setSearch] = useState('');
